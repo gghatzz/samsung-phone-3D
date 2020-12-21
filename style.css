@@ -19,8 +19,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 15px;
+    border-radius: 150px;
     transform-style: preserve-3d;
+    transform: perspective(100px);
+
     position: absolute;
 
 }
@@ -36,11 +38,25 @@ body {
 
 .chip {
     width: 300px;
-    transform: translateZ(80px)
-      
-    
-    
+    transform: perspective(1000px);
+    transform: translateZ(20px);
+    height: auto;
   
+}
+
+
+
+.chip img {
+    max-width: 100%;
+    transition: all 0.3s;
+    display: block;
+    width: 100%;
+    height: auto;
+    transform: scale(1);
+}
+
+.chip:hover {
+    transform: scale(1.1);
 }
 
 
