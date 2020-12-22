@@ -183,6 +183,15 @@ html{
 
 }
 
+/*Simulate page content*/
+.main-content{
+    width: 100%;
+    height: 100vh;
+    background: url("https://github.com/ghatzz/comingsoonversus.github.io/blob/master/Phoenicopterus_ruber_in_S%C3%A3o_Paulo_Zoo.jpg?raw=true") center no-repeat;
+    background-size: cover;
+}
+
+
 
 #demoFont {
     font-family: "Arial Black", Gadget, sans-serif;
