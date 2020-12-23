@@ -19,13 +19,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 150px;
     transform-style: preserve-3d;
-    transform: perspective(100px);
+    transform: perspective(50px);
+    /*delete this below if change phone yooo */
+    
+    max-height: 620px;
+    max-width: 520px;
+    width: 620px;
+    height: 520px;
 
     position: absolute;
-
 }
+
 
 
 
@@ -53,7 +58,17 @@ body {
     width: 100%;
     height: auto;
     transform: scale(1);
-}
+        
+} 
+
+
+
+
+
+
+
+
+
 
 .chip:hover {
     transform: scale(1.1);
@@ -195,7 +210,7 @@ html{
 
 #demoFont {
     font-family: "Arial Black", Gadget, sans-serif;
-    font-size: 300px;
+    font-size: 230px;
     letter-spacing: -1.2px;
     word-spacing: 2px;
     color: #00000081;
@@ -205,9 +220,20 @@ html{
     font-variant: normal;
     text-transform: uppercase;
     position:fixed;
+    animation-name: floating; 
+    animation-duration: 3s; 
+    animation-iteration-count: infinite; 
+    animation-timing-function: ease-in-out; 
+    margin-left: 30px; 
+    margin-top: 5px;
+
  }
 
-
+ @keyframes floating { 
+    0% { transform: translate(0,  0px); } 
+    50%  { transform: translate(0, 15px); } 
+    100%   { transform: translate(0, -0px); }     
+} 
  
   
 
